@@ -1,16 +1,18 @@
 <html lang="en" dir="ltr"><head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>Minseo Kim</title>
   </head>
   <body>
     <div>
       <div id = "banner">
         <nav class = "navbar">
-
           <ul class="nav-links">
               <div class="menu">
+                <div class = "logo">
+                  <img src="./Images/logo.png" alt="logo of planet around mk" width = "100px">
+                </div>
                 <li><a href="#about">about</a></li>    
                 <li><a href="#project">portfolio</a></li>
                 <li><a href="#contact">contact</a></li>
@@ -25,7 +27,11 @@
       <div class = "cover">
         <div class = "introduction">
           <p id = "nameHeading">Hi, I'm Minseo.</p>
-          <p id = "bioHeading" class = "hidden">Developer.</p>
+          <div class="container">
+            <div class = "bioHeading">Developer.</div>
+            <div class = "bioHeading">Student.</div>
+            <!-- <div class = "bioHeading">.</div> -->
+          </div>
           <p>Student at Northwestern University. <br> Passionate about people, tech, and anything and everything creative.</p>
         </div>
         <div class = "introImage">
@@ -73,10 +79,44 @@
             <div class = "firstGif"> 
               <iframe src="https://giphy.com/embed/gcgHsyd4ZIvESXuDEC" width="450" height="274" frameBorder="0" class="giphy-embed" allowFullScreen alt = "Gif of a player jumping around and fighting a game boss"></iframe>
               <p id = "input">Boss Level Game. Made with Unity Game Engine and C#.</p>
+              <button id="myBtn2" class = "learnMore">learn more</button>
+              
+              <div id="myModal2" class="modal">
+
+                <div class="modal-content">
+                  <p>This project was made as an assignment for my CS 376 Game Design and Development class. 
+                    I used the Unity Game Engine and C# for the game scripts, coding player movement, player attack,
+                    spawning enemy objects, enemy behavior and movement,
+                    and even implemented animation for player and enemy movement. I also designed the scene using Unity
+                    tools in the game engine.
+
+                  </p>
+                </div>
+              
+              </div>
              </div>
+  
              <div class = "secondGif">
               <iframe src="https://giphy.com/embed/1MStuCyDEAi2c5LyTE" width="450" height="274" frameBorder="0" class="giphy-embed" allowFullScreen alt = "PacMan gameplay"></iframe>
-              <p><a href = "https://github.com/minsharky/pacman">PacMan remake game</a>. Made with Unity Game Engine and C#.</p>
+              <p>PacMan remake game. Made with Unity Game Engine and C#.</p>
+              <button id="myBtn" class = "learnMore">learn more</button>
+
+              <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                  <p>This project was made as an assignment for my CS 376 Game Design and Development class. 
+                    I used the Unity Game Engine and C# for the game scripts, coding player movement, enemy movement,
+                    and other various player mechanics such as the power-up pellets. I also designed the scene using Unity
+                    tools in the game engine.
+                    <br>
+                    <br>
+                    <a href = "https://github.com/minsharky/pacman">Check out my github repo for this project.</a>
+
+                  </p>
+                </div>
+              
+              </div>
+
              </div>
           </div>
 
