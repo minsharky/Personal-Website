@@ -22,6 +22,9 @@ p, div, button{
     bottom:29px;
     margin-bottom:-100px;
 }
+.logo img{
+    display:inline-block;
+}
 
 .navbar .menu{
     text-align:right;
@@ -64,6 +67,7 @@ p, div, button{
     align-items: center;
     padding-top:100px;
     padding-bottom:100px;
+    /* border-style: solid; */
 }
 
 .introduction{
@@ -87,11 +91,10 @@ p, div, button{
     margin:auto;
 }
 
-.introImage, img{
+.introImage img{
     display:inline-block;
     border-radius: 46%;
 }
-
 
 /* ABOUT ME */
 
@@ -162,8 +165,9 @@ p, div, button{
 }
 
 .demos{
-    width:79%;
+    width:82%;
     margin:auto;
+    /* border-style:solid; */
 }
 
 .demos .firstGif, .demos .secondGif{
