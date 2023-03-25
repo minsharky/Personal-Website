@@ -118,6 +118,7 @@ p, div, button{
 .aboutHeading .aboutText{
     position:relative;
     font-size:16px;
+    /* font-size: 1.15vw; */
     color:rgb(49, 49, 49);
     width:55%;
     margin-left: 115px;
@@ -167,6 +168,7 @@ p, div, button{
 }
 
 .demos{
+    display : flex;
     width:fit-content;
     margin:auto;
 }
