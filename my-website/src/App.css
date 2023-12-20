@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.App{
+  margin: 0;
+  padding: 0;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+body{
+  background-color:rgba(162, 208, 150, 0.6);
+}
+
+#banner{
+  background-color: rgba(96, 139, 85, 0.6);
+  display:flex;
+}
+
+.page{
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+}
+
+p, div, button{
+    font-family: "Nunito", sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+.navbar{
+  width:100%;
+}
+
+.navbar .menu{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+}
+
+.logo img{
+  display:flex;
+  align-items: center;
+  margin-left:50px;
+}
+
+.navbar .menu .nav-links{
+  display:flex;
+  align-items:center;
+}
+
+.navbar li{
+    display:flex;
+    font-family: "Nunito", sans-serif;
+    padding: 8px;
+    margin-right:50px;
+}
+
+.navbar .menu i{
+    position: relative;
+    font-size:30px;
+    margin-right:20px;
+}
+
+.navbar .menu i:hover, .navbar li:hover a{
+    color:white;
+}
+
+.navbar .menu a{
+    position: relative;
+    text-decoration: none; 
+    color:black;
+    font-size: 20px;
+}
+
+/* HOME */
+
+.home{
+  display:flex;
+  align-items:center;
+}
+
+.cover{
+  display : flex;
+  width:fit-content;
+  margin:auto;
+  align-items: center;
+}
+
+.introduction{
+  align-items: center;
+}
+
+.introduction #nameHeading{
+    font-weight: bold;
+    font-size: 75px;
+}
+
+.introduction .bioHeading{
+    font-weight: bold;
+    font-size: 55px;
+    color:dimgray;
+}
+
+.introduction p{
+    position:relative;
+    font-size: 20px;
+    margin:auto;
+}
+
+.introImage img{
+    display:flex;
+    border-radius: 46%;
+}
+
+/* ABOUT ME */
+
+.aboutHeading{
+  display:flex;
+  width:fit-content;
+  margin:auto;
+}
+
+.aboutHeading #aboutTitle{
+  position:relative;
+  width:fit-content;
+  font-size:45px;
+  font-weight:bold;
+  text-align:center;
+  margin:auto;
+}
+
+.aboutHeading .aboutText{
+  position:relative;
+  font-size: 1.5vw;
+  color:rgb(49, 49, 49);
+  width:60%;
+  margin:auto;
+  text-size-adjust: none;
+}
+
+#resume{
+  position:relative;
+  padding: 12px 28px;
+  color:black;
+  font-size:18px;
+  text-align:center;
+  width:fit-content;
+  margin:auto;
+  background-color: rgba(96, 139, 85, 0.6);
+  border-radius:4px;
+  border-color:rgba(45, 62, 41, 0.6);
+}
+
+#resume:hover{
+    background-color: rgba(61, 91, 54, 0.6);
+}
+
+/* PORTFOLIO*/
+
+.projectHeading{
+    padding-bottom:100px;
+}
+
+.projectHeading #projectTitle{
+    position:relative;
+    font-size:45px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.projectHeading #projectBio, .contactHeading #contactBio{
+    color:dimgray;
+    font-size:20px;
+    text-align:center;
+    margin-top:-40px;
+}
+
+.demos{
+    display : flex;
+    width:fit-content;
+    margin:auto;
+}
+
+.demos .firstGif, .demos .secondGif{
+    display:inline-block;
+}
+
+.demos .firstGif{
+    margin-right:100px;
+}
+
+.demos .firstGif p, .demos .secondGif p{
+    text-align:center;
+}
+
+.demos .learnMore{
+    position:relative;
+    padding: 12px 20px;
+    font-weight:bold;
+    color:black;
+    font-size:16px;
+    text-align:center;
+    width:30%;
+    background-color: rgba(96, 139, 85, 0.6);
+    border-radius:4px;
+    margin-left:160px;
+    border-color:rgba(0,0,0,0);
+}
+
+.demos .learnMore:hover{
+    background-color: rgba(61, 91, 54, 0.6);
+}
+
+/* CONTACT */
+
+#contact{
+  width:fit-content;
+  margin:auto;
+}
+
+.contactText{
+    text-align:center;
+    font-size:18px;
+}
+
+.contactHeading #contactTitle{
+  position:relative;
+  font-size:45px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.contactHeading #contactBio{
+  color:dimgray;
+  font-size:20px;
+  text-align:center;
+  margin-top:-40px;
+}
+
+/* ANIMATION */
+
+.container{
+    margin-top:-10px;
+    margin-bottom:80px;
+}
+
+.container>div {
+    opacity: 0;
+    height: 0px;
+}
+/* .container>div:nth-child(1){
+    animation: animation 12s infinite;
+}
+.container>div:nth-child(2){
+    animation: animation 12s infinite;
+    animation-delay: 4s;
+}
+.container>div:nth-child(3){
+    animation: animation 12s infinite;
+    animation-delay: 8s;
+} */
+
+.container>div:nth-child(1){
+    animation: animation 8s infinite;
+}
+.container>div:nth-child(2){
+    animation: animation 8s infinite;
+    animation-delay: 4s;
+}
+@keyframes animation {
+    0% {opacity: 0; }
+    16% {opacity: 1;}
+    33% {opacity: 0; }
+    100% {opacity: 0; }
+}
+
+/* MODAL */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+
+
