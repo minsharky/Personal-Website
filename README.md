@@ -1,2 +1,2 @@
-# portfolio330
-Personal Portfolio for CS330
+# Personal-Website
+Minseo's Personal Website & Portfolio
