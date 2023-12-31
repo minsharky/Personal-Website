@@ -1,11 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
 
 .App{
   margin: 0;
   padding: 0;
   min-width: 100vh;
-  min-height: 100vh;
 }
 
 body{
@@ -18,9 +17,8 @@ body{
 }
 
 .page{
-  min-height: 100vh;
+  min-height: 88vh;
   display:flex;
-  align-items: center;
 }
 
 p, div, button{
@@ -57,13 +55,13 @@ p, div, button{
     margin-right:50px;
 }
 
-.navbar .menu i{
+.navbar .menu #icon{
     position: relative;
     font-size:30px;
     margin-right:20px;
 }
 
-.navbar .menu i:hover, .navbar li:hover a{
+.navbar .menu #icon:hover, .navbar li:hover a{
     color:white;
 }
 
@@ -76,25 +74,16 @@ p, div, button{
 
 /* HOME */
 
-.home{
-  display:flex;
+#cover{
+  display: flex;
   align-items:center;
-}
-
-.cover{
-  display : flex;
   width:fit-content;
   margin:auto;
-  align-items: center;
-}
-
-.introduction{
-  align-items: center;
 }
 
 .introduction #nameHeading{
     font-weight: bold;
-    font-size: 75px;
+    font-size: 78px;
 }
 
 .introduction .bioHeading{
@@ -116,13 +105,13 @@ p, div, button{
 
 /* ABOUT ME */
 
-.aboutHeading{
+#about{
   display:flex;
   width:fit-content;
   margin:auto;
 }
 
-.aboutHeading #aboutTitle{
+#aboutTitle{
   position:relative;
   width:fit-content;
   font-size:45px;
@@ -131,7 +120,7 @@ p, div, button{
   margin:auto;
 }
 
-.aboutHeading .aboutText{
+.aboutText{
   position:relative;
   font-size: 1.5vw;
   color:rgb(49, 49, 49);
@@ -159,8 +148,12 @@ p, div, button{
 
 /* PORTFOLIO*/
 
+#project{
+  width:100%;
+}
+
 .projectHeading{
-    padding-bottom:100px;
+  margin:auto;
 }
 
 .projectHeading #projectTitle{
@@ -170,7 +163,7 @@ p, div, button{
     text-align:center;
 }
 
-.projectHeading #projectBio, .contactHeading #contactBio{
+.projectHeading #projectBio{
     color:dimgray;
     font-size:20px;
     text-align:center;
@@ -178,13 +171,13 @@ p, div, button{
 }
 
 .demos{
-    display : flex;
-    width:fit-content;
-    margin:auto;
+  display: flex;
+  width:fit-content;
+  margin:auto;
 }
 
 .demos .firstGif, .demos .secondGif{
-    display:inline-block;
+  display:inline-block;
 }
 
 .demos .firstGif{
@@ -221,8 +214,8 @@ p, div, button{
 }
 
 .contactText{
-    text-align:center;
-    font-size:18px;
+  text-align:center;
+  font-size:18px;
 }
 
 .contactHeading #contactTitle{
